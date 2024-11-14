@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./app.js"></script>
+    <style>
+        body {
+
+        }
+        p {
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .productReviews___item {
+            display: flex;
+            gap: 8px;
+
+            font-size: 18px;
+
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="reviewDiplayBox">
+
+        </div>
+        <div id="addReviewForm">
+            <h2>Добавить отзыв</h2>
+            <select class="productSelect">
+                <!-- Опции заполнятся из JavaScript -->
+            </select>
+            <textarea id="reviewText" placeholder="Введите отзыв" rows="5" cols="50"></textarea><br>
+            <button id="submitReview" class="submitReviewBtn">Добавить отзыв</button>
+            <div class = "errorMessage__container"></div>
+        </div>
+    </div>
+</body>
+</html>
